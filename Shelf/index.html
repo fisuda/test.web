@@ -13,21 +13,21 @@ th.head {color: white; background: #233c68;}
   <body>
   	<a href=".."><img src="https://fiware.github.io/tutorials.Step-by-Step/img/fiware.png" alt="FIWARE Banner" title=""></a>
     
-    <p>FIWARE Tutorial Schema:<b>Shelf</b></p>
+    <p>FIWARE チュートリアル・スキーマ:<b>Shelf</b></p>
 
-    <p><b>Shelf</b> - a unit of Store Furniture. Products are found on a shelf</p>
+    <p><b>Shelf</b> - ストア用家具のユニット。製品は棚にあります。</p>
 
 
 
     <table>
         <thead>
   			<tr>
-  				<th>Property</th><th>Expected Type</th><th>Description</th>               
+  				<th>プロパティ</th><th>期待されるタイプ</th><th>説明</th> 
   			</tr>
   		</thead>
 
 		<tbody><tr>
-     		<th  class="head" colspan="3">Properties from <a href="../Shelf">Shelf</a></th>
+     		<th  class="head" colspan="3"><a href="../Shelf">Shelf</a> のプロパティ</th>
 			</tr>
 		</tbody>
 		<tbody>
@@ -36,7 +36,7 @@ th.head {color: white; background: #233c68;}
 					<code property="rdfs:label">locatedIn</code>
     			</th>
           <td>Relationship: <a href="../Store">Building</a></td>
- 				<td class="prop-ect">The Building that the Shelf Unit is located in.
+ 				<td class="prop-ect">棚ユニットがある建物
  				</td>
  			</tr>
  			<tr>
@@ -44,7 +44,7 @@ th.head {color: white; background: #233c68;}
 					<code property="rdfs:label">maxCapacity</code>
     			</th>
           <td>Property: <a href="http://schema.org/Integer">integer</a> </td>
- 				<td class="prop-ect">The maximum number of items the shelf can hold
+ 				<td class="prop-ect">棚が保持できるアイテムの最大数
  				</td>
  			</tr>
  			<tr>
@@ -52,7 +52,7 @@ th.head {color: white; background: #233c68;}
 					<code property="rdfs:label">name</code>
     			</th>
           <td>Property: <a href="http://schema.org/Text">text</a> </td>
- 				<td class="prop-ect">The name of the Shelf Unit
+ 				<td class="prop-ect">棚ユニットの名前
  				</td>
  			</tr>
  			<tr>
@@ -60,7 +60,7 @@ th.head {color: white; background: #233c68;}
 					<code property="rdfs:label">stocks</code>
     			</th>
           <td>Relationship: <a href="../Product">Product</a></td>
- 				<td class="prop-ect">The Product currently found on the Shelf Unit
+ 				<td class="prop-ect">棚ユニットで現在見つかっている製品
  				</td>
  			</tr>
       <tr>
@@ -68,7 +68,7 @@ th.head {color: white; background: #233c68;}
           <code property="rdfs:label">numberOfItems</code>
           </th>
           <td>Property: <a href="http://schema.org/Integer">integer</a> </td>
-        <td class="prop-ect">The number of items of the product currently found on the shelf
+        <td class="prop-ect">現在棚にある製品のアイテムの数
         </td>
       </tr>
       <tr>
@@ -76,7 +76,7 @@ th.head {color: white; background: #233c68;}
           <code property="rdfs:label">installedBy</code>
           </th>
           <td>Relationship: <a href="http://schema.org/Person">Person</a> </td>
-        <td class="prop-ect">The Person who installed the shelf
+        <td class="prop-ect">棚を設置した人
         </td>
       </tr>
        <tr>
@@ -84,7 +84,7 @@ th.head {color: white; background: #233c68;}
           <code property="rdfs:label">statusOfWork</code>
           </th>
           <td>Property: <a href="http://schema.org/Boolean">boolean</a> </td>
-        <td class="prop-ect">The status of the shelf installation (e.g. <code>pending</code>, <code>in progress</code>, <code>completed</code>)
+        <td class="prop-ect">棚の設置のステータス (例 <code>pending (保留中)</code>, <code>in progress (進行中)</code>, <code>completed (完了)</code>)
         </td>
       </tr>
       <tr>
@@ -92,7 +92,7 @@ th.head {color: white; background: #233c68;}
           <code property="rdfs:label">location</code>
           </th>
           <td>GeoProperty: <code>geo:json</code> </td>
-        <td class="prop-ect">The location of the Shelf
+        <td class="prop-ect">棚の場所
         </td>
       </tr>
  		</tbody>
@@ -100,7 +100,7 @@ th.head {color: white; background: #233c68;}
 
 
 <p>
-  A snippet of the <code style="font-size: large;color: #d6604d;">@context</code> and <code style="font-size: large;color: #d6604d;">@graph</code> can be seen below (scroll to see more detail):
+  <code style="font-size: large;color: #d6604d;">@context</code> と <code style="font-size: large;color: #d6604d;">@graph</code>  のスニペットは、以下にあります (詳細を見るためにスクロールしてください):
 </p>
 <pre style="padding-left: 1em; max-height: 16em; overflow: scroll; background: aliceblue; border: solid 1px #233c68;
 "

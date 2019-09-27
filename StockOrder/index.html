@@ -13,12 +13,12 @@ th.head {color: white; background: #233c68;}
   <body>
   	<a href=".."><img src="https://fiware.github.io/tutorials.Step-by-Step/img/fiware.png" alt="FIWARE Banner" title=""></a>
 
-     <p>FIWARE Tutorial Schema:<b>StockOrder</b></p>
+     <p>FIWARE チュートリアル・スキーマ:<b>StockOrder</b></p>
 
 
 
 
-     <p><b>StockOrder</b> - an entry in a list of items sold in one or more stores</p>
+     <p><b>StockOrder</b> - 1つ以上のストアで販売されているアイテムのリストのエントリ</p>
 
 
 
@@ -26,12 +26,12 @@ th.head {color: white; background: #233c68;}
     <table>
         <thead>
   			<tr>
-  				<th>Property</th><th>Expected Type</th><th>Description</th>               
+  				<th>プロパティ</th><th>期待されるタイプ</th><th>説明</th>    
   			</tr>
   		</thead>
 
 		<tbody><tr>
-     		<th  class="head" colspan="3">Properties from <a href="../StockOrder">StockOrder</a></th>
+     		<th  class="head" colspan="3"><a href="../StockOrder">StockOrder</a> のプロパティ</th>
 			</tr>
 		</tbody>
 		<tbody>
@@ -40,7 +40,7 @@ th.head {color: white; background: #233c68;}
 					<code property="rdfs:label">orderedProduct</code>
     			</th>
         <td>Relationship: <a href="../Product">Product</a></td>
- 				<td class="prop-ect">The product associated to this stock item
+ 				<td class="prop-ect">この在庫品目に関連付けられている製品
  				</td>
  			</tr>
       <tr>
@@ -48,7 +48,7 @@ th.head {color: white; background: #233c68;}
           <code property="rdfs:label">requestedFor</code>
           </th>
           <td>Relationship: <a href="../Store">Building</a> </td>
-        <td class="prop-ect">The id of the store this product is sold by
+        <td class="prop-ect">この製品が販売されているストアの id
         </td>
       </tr>
        <tr>
@@ -56,7 +56,7 @@ th.head {color: white; background: #233c68;}
           <code property="rdfs:label">requestedBy</code>
           </th>
           <td>Relationship: Person</td>
-        <td class="prop-ect">The Person who created this StockOrder
+        <td class="prop-ect">この StockOrder を作成した人
         </td>
       </tr>
       <tr>
@@ -64,7 +64,7 @@ th.head {color: white; background: #233c68;}
           <code property="rdfs:label">orderDate</code>
           </th>
           <td>Property: <a href="https://schema.org/DateTime">DateTime</a> </td>
-        <td class="prop-ect">The date the order was placed.
+        <td class="prop-ect">注文された日付
         </td>
       </tr>
        <tr>
@@ -72,7 +72,7 @@ th.head {color: white; background: #233c68;}
           <code property="rdfs:label">stockCount</code>
           </th>
           <td>Property: <a href="http://schema.org/Integer">integer</a> </td>
-        <td class="prop-ect">The number of items left in stock in the warehouse
+        <td class="prop-ect">倉庫に在庫が残っているアイテムの数
         </td>
       </tr>
  		</tbody>
@@ -81,7 +81,7 @@ th.head {color: white; background: #233c68;}
 
 
     <p>
-  A snippet of the <code style="font-size: large;color: #d6604d;">@context</code> and <code style="font-size: large;color: #d6604d;">@graph</code> can be seen below (scroll to see more detail):
+  <code style="font-size: large;color: #d6604d;">@context</code> と <code style="font-size: large;color: #d6604d;">@graph</code>  のスニペットは、以下にあります (詳細を見るためにスクロールしてください):
 </p>
 <pre style="padding-left: 1em; max-height: 16em; overflow: scroll; background: aliceblue; border: solid 1px #233c68;
 "
